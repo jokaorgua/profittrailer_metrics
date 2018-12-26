@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+  profittrailer_metrics:
+    image: jokaorgua/profittrailer_metrics
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-volume:/var/lib/grafana
+      - prometheus-volume:/var/lib/prometheus/metrics2/
+    env_file:
+      - ./.env
+volumes:
+  grafana-volume:
+  prometheus-volume:
