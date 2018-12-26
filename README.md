@@ -6,4 +6,4 @@
 ``` git clone https://github.com/jokaorgua/profittrailer_metrics.git ```
 4. edit .env file with appropriate credentials
 5. run ```docker-compose up```
-6. refer your browser to http://yourhost:3000/
+6. refer your browser to http://yourhost:3000/ (username: admin   password: admin). CHANGE PASSWORD after first login!!!
